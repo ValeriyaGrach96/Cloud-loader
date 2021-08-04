@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Klasik';
+  src: url('../fonts/Klasik-Rough.woff2') format('woff2');
+}
+h1 {
+  font-family: 'Klasik';
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.Orange {
+  color: #FC9D45;
+}
+.App {
+  text-align: center;
+  height: 100vh;
+  background: left bottom / 30% 50% no-repeat url('../assets/images/backgroundLeft.svg'),top right / 25% 40% no-repeat url('../assets/images/backgroundRight.svg') #FFFBF8;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 720px) {
+  .App {
+    background: left bottom/ contain no-repeat no-repeat url('../assets/images/backgroundMountain.svg') #FFF3E9;
+  }
+}
