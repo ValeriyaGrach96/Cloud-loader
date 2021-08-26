@@ -3,6 +3,7 @@ import LoaderItem from '../LoaderItem/LoaderItem';
 import styles from './LinksList.module.css';
 import { deleteListItem } from '../../assets/utils/filterLists';
 
+//only for expample
 const file =  new File(["foo"], "foo.txt", {
   type: "text/plain",
 });
@@ -10,18 +11,17 @@ const file2 =  new File(["foo2"], "foo2.txt", {
   type: "text/plain",
 });
 
-const files = [file, file2]
-
 function LinksList() {
-  const [filesInJSX, setFiles] = useState(files);
-//doesn't work
+  const [files, setFiles] = useState([file, file2]);
+
   const deleteFileFromList = useCallback((fileName: String) => {
-    const newFiles = [...deleteListItem(fileName, filesInJSX)];
+    const newFiles = [...deleteListItem(fileName, files)];
     setFiles(newFiles);
-  }, [filesInJSX]);
+  }, [files]);
 
   return(
     <section className={styles.LinksList}>
+      {files.length ?
       <ul>
         {files.map(f => {
           return (
@@ -34,7 +34,9 @@ function LinksList() {
             </li>
           )
         })}
-      </ul>
+      </ul> :
+      <p>Your links will be here</p>
+      }
     </section>
   );
 }
