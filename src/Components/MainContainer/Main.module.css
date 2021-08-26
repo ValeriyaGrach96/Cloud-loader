@@ -7,7 +7,7 @@
   max-height: 600px;
   padding: 20px;
   filter: drop-shadow(4.61875px 11.5469px 115.469px rgba(134, 45, 124, 0.08));
-  background-image: url('../assets/images/backgroundBoy.svg');
+  background-image: url('../../assets/images/backgroundBoy.svg');
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 250px 250px;
@@ -17,5 +17,6 @@
 @media screen and (max-width: 720px) {
   .Main {
     flex-direction: column;
+    background-image: none;
   }
 }

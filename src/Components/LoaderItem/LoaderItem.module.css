@@ -1,0 +1,51 @@
+.wrapperFilesItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.iconFiles {
+  width: 40px;
+  height: 40px;
+}
+.dataWrapper {
+  text-align: start;
+  margin-left: 15px;
+  margin-right: auto;
+}
+.fileName {
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 220px;
+}
+.closeButton {
+  height: 100%;
+  min-width: 40px;
+  border: none;
+  background-color: #ffffff;
+  border-left: 1px solid #FFF3E9;
+
+  font-size: 17px;
+}
+.extended {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #E5E5E5;
+  margin-top: 5px;
+}
+.simpleButton {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  padding: 5px;
+  line-height: 16px;
+  margin: 0;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.simpleButton > img {
+  margin-right: 3px;
+}

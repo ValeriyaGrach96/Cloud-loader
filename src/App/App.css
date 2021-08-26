@@ -2,7 +2,14 @@
   font-family: 'Klasik';
   src: url('../fonts/Klasik-Rough.woff2') format('woff2');
 }
-h1 {
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-VariableFont_wght.ttf') format('ttf');
+}
+body {
+  font-family: 'Manrope';
+}
+h1, h2, h3 {
   font-family: 'Klasik';
   font-weight: 500;
   margin-bottom: 20px;
@@ -20,6 +27,10 @@ h1 {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+*:focus,
+*:focus-visible {
+  outline: #FDA758 auto 1px ;
 }
 
 @media screen and (max-width: 720px) {
