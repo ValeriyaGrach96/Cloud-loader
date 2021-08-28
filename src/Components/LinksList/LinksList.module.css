@@ -12,9 +12,17 @@
 .listItem + .listItem {
   margin-top: 10px;
 }
+.emptyLinks {
+  width: 100%;
+  height: 100%;
+  font-family: 'Klasik';
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 45%;
+}
 
-@media screen  and (max-width: 721px) {
+/* @media screen  and (max-width: 721px) {
   .LinksList {
     display: none;
   }
-}
+} */

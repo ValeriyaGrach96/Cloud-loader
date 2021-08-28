@@ -35,7 +35,7 @@ function LinksList() {
           )
         })}
       </ul> :
-      <p>Your links will be here</p>
+      <p className={styles.emptyLinks}>Your links will be here</p>
       }
     </section>
   );
