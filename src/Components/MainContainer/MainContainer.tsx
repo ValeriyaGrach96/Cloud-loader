@@ -11,6 +11,9 @@ function MainContainer() {
   }, []);
 
   useEffect(() => {
+    if (window.innerWidth <= 720) {
+      setResolution(true)
+    }
     window.addEventListener('resize', onWindowResize);
     return () => {
       window.removeEventListener('resize', onWindowResize);
